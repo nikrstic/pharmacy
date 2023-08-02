@@ -1,0 +1,10 @@
+DELIMITER $$
+CREATE TRIGGER update_dostupnost
+BEFORE UPDATE ON apoteka.products
+FOR EACH ROW
+BEGIN
+    IF NEW.dostupnost < 52 THEN
+        SET NEW.dostupnost = NEW.dostupnost + 150;
+    END IF;
+END$$
+DELIMITER ;

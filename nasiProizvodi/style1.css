@@ -1,0 +1,150 @@
+.main-wrapper{
+    display: none;
+}
+/*
+h1{
+    text-align: center;
+    margin-bottom:15px;
+}
+h2{
+    margin-bottom:15px;
+}*/
+.main-wrapper{
+    max-width: 650px;
+    margin:auto;
+    background-color:rgba(255,255,255,0.3);
+    padding:20px;
+    margin-top: 10px;
+}
+.black{
+    color:black;
+}
+form h2{
+    color:white;
+    text-align: center;
+}
+form div{
+    padding:10px;
+}
+form div label{
+    display: block;
+    font-weight: bold;
+    font-size:18px;
+    color:white;
+    
+}
+form div input{
+    width:100%;
+    padding: 0 10px;
+    height:50px;
+    font-size: 18px;
+    
+}
+button{
+    cursor:pointer;
+}
+form div button{
+    cursor: pointer;
+    padding:10px 30px;
+    font-size: 18px;
+    color:black;
+}
+form ul li{
+    color:red;
+    padding-top: 2px;
+}
+form ul{
+    list-style:none;
+}
+.no-acc-register{
+    text-align: center;
+    padding:10px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.no-acc-register button{
+    margin: 10px 0;
+    padding:15px;
+    font-size: 22px;
+    color:black;
+}
+.no-acc-register p{
+    font-size: 28px;
+    padding: 10px 0;
+}
+.custom-modal{
+    display: none;
+    background-color:black;
+    box-shadow: rgba(255,255,255,0.8) 0 0 1000px 1000px;
+    max-width: 600px;
+    margin: auto;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position: absolute;
+    top:10%;
+    left:0;
+    right:0;
+    width: 100%;
+
+}
+.custom-modal button#closeModal {
+    height: 40px;
+    padding:10px;
+    margin: 10px;
+    width:40px;
+    background-color:transparent; 
+    border: 0; 
+    font-size:25px;
+    position:absolute;
+    top:20px;
+    right:20px;
+    font-weight: bold;
+
+}
+#regForm{
+    background-color: black;
+}/*
+#regForm div input{
+    color:black ;
+}
+*/
+#loginForm div input{
+    color:black ;
+}
+.inner-container{
+    border:1px solid green;
+    padding:15px;
+}
+.inner-container button{
+    color:black;
+}
+.inner-container.left-side{
+    text-align: center;
+}
+.inner-container img.profile{
+    width:70%;
+    border:radius 50%;
+    display:block;
+    margin: auto;
+    border:5px solid white;
+    margin-bottom:15px;
+
+}
+.inner-container.right-side form{
+    display:flex;
+    height:100px;
+}
+.inner-container.right-side form textarea{
+    width:80%;
+    border:0;
+    padding:10px;
+    resize: none;
+    color:black;
+    outline-color: green;
+}
+.inner-container.right-side form button{
+    width:20%;
+    border:0;
+    padding: 10px;
+}

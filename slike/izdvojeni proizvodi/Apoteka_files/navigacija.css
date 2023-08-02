@@ -1,0 +1,51 @@
+header h1{
+    padding: 20px;
+    text-align: center;
+    user-select: none;
+}
+
+/*padajuci meni*/
+nav ul{
+    overflow: hidden;
+    list-style-type: none;
+    
+    
+}
+#logo{
+    height: fit-content;
+    overflow:hidden ;
+
+}
+nav ul li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    
+    
+}
+nav a{
+    border: 1px solid white;
+    border-radius: 8px;
+    display: block;
+    padding: 18px;
+    background-color: var(--zelena);
+}
+.dropdown:hover .submenu{
+    display: block;
+
+}
+.submenu{
+    position: absolute;
+    display: none;
+    width: 25%;
+}
+.row{
+    width: 100%;
+    float: left;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+    
+
+}

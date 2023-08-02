@@ -1,0 +1,223 @@
+:root{
+    --zelena:#4baa28;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    position: relative;
+}
+.row{
+    width: 100%;
+    overflow: hidden;
+}
+/*slideshow*/
+#divslajdova{
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+#divslajdova img{
+    width: 100%;
+}
+.slajdovi{
+    display: none;
+}
+.prethodno, .sledece {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: block;
+    width: 80px;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+    user-select: none;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .prethodno{
+    left: 0;
+  }
+  .sledece{
+    right: 0;
+  }
+  .prelaz {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /*izdvojeni proizvodi*/
+#izdvojeniProizvodi{
+    text-align: center;
+
+}
+#izdvojeniProizvodi img{
+    height: 250px;
+}
+#izdvojeniProizvodi .kartice{
+    float: left;
+    width: 25%;
+}
+#izdvojeniProizvodi p{
+    text-align: center;    
+}
+
+/*drugi pokusaj*/
+#izdvojeniproizvodi{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.kartice{
+    
+    float: left;
+}
+/*tabela*/
+#tabela {
+    background-color: white;
+}
+table{
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+tbody{
+    width: 100%;
+}
+td{
+    padding: 0px;
+    margin: 0px;
+}
+table img{
+    max-width: 80%;
+}
+
+
+#parallax {
+    background-color: black;
+    z-index: -1;
+    display: block;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+}
+/*kupcirow*/
+#kupciRow{
+    background-color: aliceblue;
+}
+/*futer*/
+footer{
+    padding: 10px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    
+}
+/*
+#parallax {
+    animation-name: blur;
+    animation-duration: 2000;
+  }
+  
+  @keyframes blur {
+    from {filter: blur(100%);}
+    to {filter: blur(0%);}
+  }
+  */
+  @media only screen and (max-width:750px){
+    #tabela{
+        padding: 0px;
+    }
+    .uonama{
+        height: 290px;
+        width: 85%;
+    }
+    #divabs{
+        justify-content: center;
+        float: none;
+        flex-direction: column;
+    }
+  }
+  @media only screen and (min-width: 750px) {
+      .uonama {
+        width: 34%;
+        height: 75%;
+      }
+  }
+
+  @media only screen and (max-width:400px){
+    #kupciONama{
+        padding: 0;
+    }
+    
+
+  }
+
+#kupciRow {
+    position: relative;
+    height: 500px;
+}
+#kupciONama{
+    background-image: url("slike/kupci-o-nama.png");
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    filter: brightness(40%);
+    background-attachment: fixed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   /* margin-bottom: 5px;*/
+    /*line-height: 0;*/
+    /*
+    
+    background-position: 50% 50%;
+    /*max-width: fit-content;
+    */
+    
+}
+#divabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.uonama{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    margin: 5%;
+    background-color: wheat;
+    overflow: hidden;
+    color: black;
+    border: 3px solid var(--zelena);
+}

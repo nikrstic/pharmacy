@@ -1,0 +1,134 @@
+:root{
+    --zelena:#4baa28;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sora', sans-serif;
+}
+.row{
+    width: 100%;
+}
+header{
+	background-color:var(--zelena);
+}
+header h1{
+    padding: 20px;
+    text-align: center;
+    user-select: none;
+}
+
+/*padajuci meni*/
+nav ul{
+    overflow: hidden;
+    list-style-type: none;
+    
+    
+}
+#logo{
+    height: fit-content;
+    overflow:hidden ;
+
+}
+nav ul li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    
+    
+}
+nav a{
+    display: block;
+    padding: 18px;
+    background-color: var(--zelena);
+    text-decoration: none;
+    color:white;
+}
+nav a:hover {
+    background-color: #34721e;
+}
+.dropdown:hover .submenu{
+    display: block;
+
+}
+.submenu{
+    /*position: absolute;*/
+    display: none;
+    width: 25%;
+    z-index: 100;
+}
+@media only screen and (max-width:585px){
+    a{
+        font-size: smaller;
+    }
+}
+/*futer*/
+footer{
+    
+    
+    bottom: 0;
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+/*navigacija za mobilni*/
+@media only screen and (min-width:751px){
+    #meniikonica, #meniikonicax{
+        display: none;
+    }
+    .submenu{
+        position: absolute;
+    }
+    #strelica{
+        display: none;
+    }
+}
+@media only screen and (max-width:750px){
+    header{
+        display: flex; 
+        justify-content: space-between;     
+        align-items: center;
+        background-color: var(--zelena); 
+    }
+    #linkovi{
+        display: none;
+    }
+    .submenu{
+        position: relative;
+    }
+
+    #meniikonicax{
+        margin-right: 10%;
+        display: none;
+    }
+    #meniikonica{
+        margin-right: 10%;
+        
+    }
+    nav ul li{
+        float:none;
+        width: 100%;
+    }
+    .submenu{
+        width: 100%;
+    }
+    #paralax{
+        margin-top: 0;
+    }
+}
+
+/*strelica*/
+#strelica{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#strelica a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 40%;
+    font-size: 50px;
+}
